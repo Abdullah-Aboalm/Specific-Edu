@@ -12,6 +12,7 @@ export interface Course {
   videos?: { title?: string; url: string }[];
   imagesData?: { title: string; images: string[] };
   slides?: string[];
+  edApp?: string;
 }
 
 export interface Student {

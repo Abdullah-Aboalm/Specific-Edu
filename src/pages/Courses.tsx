@@ -31,7 +31,7 @@ export default function Courses() {
               <div className="p-6">
                 <div className="flex items-center">
                   {course.icon}
-                  <h3 className="ml-2 text-xl font-semibold text-gray-900">
+                  <h3 className="ml-4 text-xl font-semibold text-gray-900">
                     {course.title}
                   </h3>
                 </div>

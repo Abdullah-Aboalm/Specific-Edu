@@ -60,7 +60,7 @@ const CourseLearn = () => {
                 url={video.url}
                 controls
                 width="100%"
-                height="400px"
+                className="h-[400px] lg:h-[550px]"
               />
             </div>
           ))}
@@ -91,7 +91,24 @@ const CourseLearn = () => {
         </div>
       ) : null}
 
-      {!course?.gamma && !course?.videos?.length && !course?.slides?.length ? (
+      {course?.edApp ? (
+        <>
+          <div className="lg:px-[10rem] flex flex-col items-center">
+            <h2 className="text-2xl font-semibold pt-10 text-center">
+              edApp Course
+            </h2>
+            <p className="text-sm py-5 text-gray-500 text-center">
+              Scan the Qr code to access the course
+            </p>
+            <img src={course.edApp} alt="ed Course" className="mt-5" />
+          </div>
+        </>
+      ) : null}
+
+      {!course?.gamma &&
+      !course?.videos?.length &&
+      !course?.slides?.length &&
+      !course?.edApp ? (
         <div className="mx-auto text-center text-4xl font-bold flex-1 flex items-center justify-center min-h-[calc(95vh-120px)]">
           Coming Soon...
         </div>

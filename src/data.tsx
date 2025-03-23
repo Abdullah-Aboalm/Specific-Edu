@@ -2,6 +2,7 @@ import { GiMaterialsScience } from "react-icons/gi";
 import { MdOutlinePermMedia } from "react-icons/md";
 import { PiSigmaThin } from "react-icons/pi";
 import { Course, Student } from "./types";
+import { FaLaptopCode } from "react-icons/fa";
 
 export const coursesData: Course[] = [
   {
@@ -26,28 +27,28 @@ export const coursesData: Course[] = [
       "/images/7_Computer-Science-From-Theory-to-Code.png",
       "/images/8_Finance-Modeling-the-Markets.png",
       "/images/9_Unsolved-Mysteries.png",
-      "/images/10_The-Journey-Continues.png"
+      "/images/10_The-Journey-Continues.png",
     ],
     questions: [
       {
         id: 1,
         question: "What is the derivative of x²?",
         options: ["x", "2x", "2x²", "x½"],
-        correctAnswer: 2
+        correctAnswer: 2,
       },
       {
         id: 2,
         question: "What is the integral of 2x?",
         options: ["x²", "x² + C", "2x² + C", "x"],
-        correctAnswer: 2
+        correctAnswer: 2,
       },
       {
         id: 3,
         question: "What is the solution to the equation x² + 4x + 4 = 0?",
         options: ["x = -2", "x = 2", "x = ±2", "x = -2 (double root)"],
-        correctAnswer: 3
-      }
-    ]
+        correctAnswer: 3,
+      },
+    ],
   },
   {
     id: "2",
@@ -71,7 +72,7 @@ export const coursesData: Course[] = [
       "/images/7_Special-Relativity-Space-Time-and-Motion.png",
       "/images/8_General-Relativity-Gravity-as-Curved-Spacetime.png",
       "/images/9_The-Standard-Model-Fundamental-Particles-and-Forces.png",
-      "/images/10_Conclusion-The-Beauty-and-Wonder-of-Physics.png"
+      "/images/10_Conclusion-The-Beauty-and-Wonder-of-Physics.png",
     ],
     questions: [
       {
@@ -81,23 +82,23 @@ export const coursesData: Course[] = [
           "An object in motion stays in motion",
           "Force equals mass times acceleration",
           "Every action has an equal and opposite reaction",
-          "An object at rest stays at rest unless acted upon by an external force"
+          "An object at rest stays at rest unless acted upon by an external force",
         ],
-        correctAnswer: 3
+        correctAnswer: 3,
       },
       {
         id: 2,
         question: "What is the unit of force in the SI system?",
         options: ["Watt", "Newton", "Joule", "Pascal"],
-        correctAnswer: 1
+        correctAnswer: 1,
       },
       {
         id: 3,
         question: "What is the formula for kinetic energy?",
         options: ["E = mc²", "KE = ½mv²", "F = ma", "P = mv"],
-        correctAnswer: 1
-      }
-    ]
+        correctAnswer: 1,
+      },
+    ],
   },
   {
     id: "3",
@@ -112,12 +113,12 @@ export const coursesData: Course[] = [
     videos: [
       {
         title: "How to Create AI Videos Tutorial",
-        url: "/videos/الكابوس الصيني الجديد - بيصنع فيلم مدته 10 دقائق شامل التعليق الصوتي وتحريك المقاطع والأنيمشن مجانا.mp4"
+        url: "/videos/الكابوس الصيني الجديد - بيصنع فيلم مدته 10 دقائق شامل التعليق الصوتي وتحريك المقاطع والأنيمشن مجانا.mp4",
       },
       {
         title: "AI Generated Video",
-        url: "/videos/mega_export.mp4"
-      }
+        url: "/videos/mega_export.mp4",
+      },
     ],
     imagesData: {
       title: "AI Generated Images",
@@ -132,15 +133,15 @@ export const coursesData: Course[] = [
         "77.png",
         "78.png",
         "93.png",
-        "10.png"
-      ]
+        "10.png",
+      ],
     },
     questions: [
       {
         id: 1,
         question: "Which AI tool is commonly used for generating images?",
         options: ["DALL-E", "ChatGPT", "Tensorflow", "PyTorch"],
-        correctAnswer: 0
+        correctAnswer: 0,
       },
       {
         id: 2,
@@ -150,18 +151,74 @@ export const coursesData: Course[] = [
           "Lower cost",
           "Faster production time",
           "More creative control",
-          "All of the above"
+          "All of the above",
         ],
-        correctAnswer: 3
+        correctAnswer: 3,
       },
       {
         id: 3,
         question: "Which format is most commonly used for AI-generated videos?",
         options: ["MP4", "AVI", "MOV", "WMV"],
-        correctAnswer: 0
-      }
-    ]
-  }
+        correctAnswer: 0,
+      },
+    ],
+  },
+  {
+    id: "4",
+    title: "Introduction to Computer Science",
+    icon: <FaLaptopCode className="h-6 w-6 text-blue-600" />,
+    description:
+      "Learn the fundamental concepts of computer science, programming, and problem-solving.",
+    price: 199,
+    duration: "8 weeks",
+    instructor: "Prof. James Carter",
+    image:
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+    edApp: "/images/edApp-qrcode.png",
+    videos: [{ title: "CS50x Course", url: "https://youtu.be/LfaMVlDaQ24" }],
+    slides: [
+      "/images/1_Introduction-to-Computer-Science.png",
+      "/images/2_Algorithms-and-Data-Structures.png",
+      "/images/3_Programming-Fundamentals.png",
+      "/images/4_Computers-and-Operating-Systems.png",
+      "/images/5_Networks-and-the-Internet.png",
+      "/images/6_Databases-and-Data-Management.png",
+      "/images/7_Cybersecurity-and-Ethical-Hacking.png",
+      "/images/8_Artificial-Intelligence-and-Machine-Learning.png",
+      "/images/9_Software-Development-and-Career-Paths.png",
+      "/images/10_Conclusion-The-Future-of-Computing.png",
+    ],
+    questions: [
+      {
+        id: 1,
+        question: "What does CPU stand for?",
+        options: [
+          "Central Processing Unit",
+          "Computer Personal Unit",
+          "Central Personal Unit",
+          "Central Process Utility",
+        ],
+        correctAnswer: 0,
+      },
+      {
+        id: 2,
+        question: "Which language is commonly used for web development?",
+        options: ["Python", "JavaScript", "C++", "Java"],
+        correctAnswer: 1,
+      },
+      {
+        id: 3,
+        question: "What is an algorithm?",
+        options: [
+          "A type of computer",
+          "A set of instructions to solve a problem",
+          "A programming language",
+          "A type of software",
+        ],
+        correctAnswer: 1,
+      },
+    ],
+  },
 ];
 
 export const tiers = [
@@ -173,8 +230,8 @@ export const tiers = [
       "Access to basic courses",
       "Quiz participation",
       "Email support",
-      "Progress tracking"
-    ]
+      "Progress tracking",
+    ],
   },
   {
     name: "Pro",
@@ -186,8 +243,8 @@ export const tiers = [
       "24/7 support",
       "Advanced progress analytics",
       "Downloadable resources",
-      "Certificate of completion"
-    ]
+      "Certificate of completion",
+    ],
   },
   {
     name: "Enterprise",
@@ -200,9 +257,9 @@ export const tiers = [
       "API access",
       "Bulk enrollment",
       "Custom branding",
-      "Training sessions"
-    ]
-  }
+      "Training sessions",
+    ],
+  },
 ];
 
 export const students: Student[] = [
@@ -212,7 +269,7 @@ export const students: Student[] = [
     email: "ahmed.mohamed@example.com",
     enrolledCourses: ["Advanced Mathematics", "Physics Fundamentals"],
     progress: 75,
-    joinDate: "2024-01-15"
+    joinDate: "2024-01-15",
   },
   {
     id: "2",
@@ -220,7 +277,7 @@ export const students: Student[] = [
     email: "fatima.ali@example.com",
     enrolledCourses: ["Create Media With AI"],
     progress: 60,
-    joinDate: "2024-02-01"
+    joinDate: "2024-02-01",
   },
   {
     id: "3",
@@ -228,7 +285,7 @@ export const students: Student[] = [
     email: "omar.hassan@example.com",
     enrolledCourses: ["Advanced Mathematics", "Create Media With AI"],
     progress: 90,
-    joinDate: "2024-01-10"
+    joinDate: "2024-01-10",
   },
   {
     id: "4",
@@ -236,7 +293,7 @@ export const students: Student[] = [
     email: "sara.ahmed@example.com",
     enrolledCourses: ["Physics Fundamentals", "Create Media With AI"],
     progress: 85,
-    joinDate: "2024-02-15"
+    joinDate: "2024-02-15",
   },
   {
     id: "5",
@@ -244,7 +301,7 @@ export const students: Student[] = [
     email: "mahmoud.ibrahim@example.com",
     enrolledCourses: ["Advanced Mathematics"],
     progress: 70,
-    joinDate: "2024-01-20"
+    joinDate: "2024-01-20",
   },
   {
     id: "6",
@@ -252,7 +309,7 @@ export const students: Student[] = [
     email: "nour.eldin@example.com",
     enrolledCourses: ["Physics Fundamentals", "Advanced Mathematics"],
     progress: 95,
-    joinDate: "2024-01-05"
+    joinDate: "2024-01-05",
   },
   {
     id: "7",
@@ -260,7 +317,7 @@ export const students: Student[] = [
     email: "layla.kamal@example.com",
     enrolledCourses: ["Create Media With AI", "Physics Fundamentals"],
     progress: 80,
-    joinDate: "2024-02-10"
+    joinDate: "2024-02-10",
   },
   {
     id: "8",
@@ -269,10 +326,10 @@ export const students: Student[] = [
     enrolledCourses: [
       "Advanced Mathematics",
       "Create Media With AI",
-      "Physics Fundamentals"
+      "Physics Fundamentals",
     ],
     progress: 88,
-    joinDate: "2024-01-25"
+    joinDate: "2024-01-25",
   },
   {
     id: "9",
@@ -280,7 +337,7 @@ export const students: Student[] = [
     email: "amira.khalil@example.com",
     enrolledCourses: ["Advanced Mathematics", "Physics Fundamentals"],
     progress: 82,
-    joinDate: "2024-02-20"
+    joinDate: "2024-02-20",
   },
   {
     id: "10",
@@ -288,7 +345,7 @@ export const students: Student[] = [
     email: "hassan.mostafa@example.com",
     enrolledCourses: ["Create Media With AI", "Physics Fundamentals"],
     progress: 78,
-    joinDate: "2024-02-22"
+    joinDate: "2024-02-22",
   },
   {
     id: "11",
@@ -296,7 +353,7 @@ export const students: Student[] = [
     email: "rana.samir@example.com",
     enrolledCourses: ["Advanced Mathematics", "Create Media With AI"],
     progress: 93,
-    joinDate: "2024-01-30"
+    joinDate: "2024-01-30",
   },
   {
     id: "12",
@@ -305,9 +362,9 @@ export const students: Student[] = [
     enrolledCourses: [
       "Advanced Mathematics",
       "Create Media With AI",
-      "Physics Fundamentals"
+      "Physics Fundamentals",
     ],
     progress: 87,
-    joinDate: "2024-02-05"
-  }
+    joinDate: "2024-02-05",
+  },
 ];
